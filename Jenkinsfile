@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image with the dynamic version
-                    sh "docker build -t my_pvt_repo:${IMAGE_TAG} ."
+                    sh "docker build -t my_pvt:${IMAGE_TAG} ."
                     
                     // List Docker images to confirm the build
                     sh 'docker images'
