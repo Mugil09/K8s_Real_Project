@@ -49,7 +49,7 @@ pipeline {
                 script {
                     withCredentials([[
                         $class: 'AmazonWebServicesCredentialsBinding',
-                        credentialsId: 'aws-crendentails-vgs' // Your Jenkins AWS credentials ID
+                        credentialsId: 'aws-crendentails-mugil' // Your Jenkins AWS credentials ID
                     ]]) {
                         def fullImageName = "${ECR_REPO}:${IMAGE_TAG}"
                         
@@ -70,7 +70,7 @@ pipeline {
                 script {
                     withCredentials([[
                         $class: 'AmazonWebServicesCredentialsBinding',
-                        credentialsId: 'aws-crendentails-vgs' // Replace with your Jenkins AWS credentials ID
+                        credentialsId: 'aws-crendentails-mugil' // Replace with your Jenkins AWS credentials ID
                     ]]) {
                         
                         // Set KUBECONFIG environment variable
