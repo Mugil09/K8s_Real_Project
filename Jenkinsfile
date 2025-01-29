@@ -57,7 +57,7 @@ pipeline {
                         sh "aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${ECR_REPO}"
                         
                         // Tag the image for ECR
-                        sh "docker tag my_pvt_repo:${IMAGE_TAG} ${fullImageName}"
+                        sh "docker tag my_pvt:${IMAGE_TAG} ${fullImageName}"
                         
                         // Push the image to ECR
                         sh "docker push ${fullImageName}"
