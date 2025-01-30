@@ -1,6 +1,6 @@
 #deployment.yaml
 #namespace: devops
-replicaCount: 2
+replicaCount: 3
 image:
   repository: 222634378984.dkr.ecr.us-east-1.amazonaws.com/my_repo
   tag: latest
